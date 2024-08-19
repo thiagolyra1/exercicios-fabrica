@@ -1,13 +1,17 @@
 while True:
-    numero1 = int(input("Digite aqui o primeiro número: "))
-    numero2 = int(input("Digite aqui o segundo número: "))
-
+    try:
+        numero1 = float(input("Digite aqui o primeiro número: "))
+        numero2 = float(input("Digite aqui o segundo número: "))
+    except ValueError:
+        print("Você não digitou um número.")
+        continue
+    
     operacao = input("Qual operação você gostaria de realizar? Escolha algum desses: 'adicao', 'subtracao', 'multiplicacao' ou 'divisao': ")
 
-    adicao = numero1+numero2
-    subtracao = numero1-numero2
-    multiplicacao = numero1*numero2
-    divisao = numero1/numero2
+    adicao = numero1 +numero2
+    subtracao = numero1 - numero2
+    multiplicacao = numero1 * numero2
+    divisao = numero1 / numero2
 
     if operacao == "adicao":
         print(f'O resultado de {numero1} + {numero2} é:  {adicao}')
