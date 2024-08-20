@@ -4,7 +4,7 @@ while True:
         numero1 = float(input("Digite aqui o primeiro número: "))
         numero2 = float(input("Digite aqui o segundo número: "))
     except ValueError:
-        print("Você não digitou um número.")
+        print("Você não digitou um número. Digite novamente do primeiro número")
         continue
     
     while True:
@@ -18,7 +18,7 @@ while True:
         divisao = numero1 / numero2
 
         # Condição para escolher a operação
-        
+
         if operacao == "+":
             print(f'O resultado de {numero1} + {numero2} é:  {adicao}')
             break
@@ -35,13 +35,16 @@ while True:
             print("Não é uma operação válida, escolha novamente.")
             continue
     
-    # Pergunta para continuar ou sair do projeto
-    sair = input("Você deseja sair da calculadora? [s]im ou [n]ão: ")
+    while True:
+        # Pergunta para continuar ou sair do projeto
+        sair = input("Você deseja sair da calculadora? [s]im ou [n]ão: ")
 
-    # Condição para sair ou continuar no projeto
-    if sair == "s":
-        break
-    elif sair == "n":
-        continue
-    else:
-        print("Digite apenas 's' para sim ou 'n' para não: ")
+        # Condição para sair ou continuar no projeto
+
+        if sair == "s":
+            break
+        elif sair == "n":
+            continue
+        else:
+            print("Digite apenas 's' para sim ou 'n' para não: ")
+            continue
