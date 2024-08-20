@@ -1,15 +1,15 @@
 while True:
     # Validando os números do usuário
     try:
-        numero1 = float(input("Digite aqui o primeiro número: "))
-        numero2 = float(input("Digite aqui o segundo número: "))
+        numero1 = float(input("Digite o primeiro número: "))
+        numero2 = float(input("Digite o segundo número: "))
     except ValueError:
         print("Você não digitou um número. Digite novamente do primeiro número")
         continue
     
     while True:
         # Operação a ser utilizada na calculadora
-        operacao = input("Qual operação você gostaria de realizar? Para somar digite: +, subtrair: -, multiplicar: x ou dividir: /: ")
+        operacao = input("Qual operação você gostaria de realizar? \nPara somar digite: +, subtrair: -, multiplicar: x ou dividir: /: ")
 
         # Lógica das operações
         adicao = numero1 + numero2
