@@ -1,5 +1,5 @@
 while True:
-    # Validando os números dos usuários
+    # Validando os números do usuário
     try:
         numero1 = float(input("Digite aqui o primeiro número: "))
         numero2 = float(input("Digite aqui o segundo número: "))
@@ -12,7 +12,7 @@ while True:
         operacao = input("Qual operação você gostaria de realizar? Para somar digite: +, subtrair: -, multiplicar: x ou dividir: /: ")
 
         # Lógica das operações
-        adicao = numero1 +numero2
+        adicao = numero1 + numero2
         subtracao = numero1 - numero2
         multiplicacao = numero1 * numero2
         divisao = numero1 / numero2
