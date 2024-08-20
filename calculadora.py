@@ -18,7 +18,6 @@ while True:
         divisao = numero1 / numero2
 
         # Condição para escolher a operação
-
         if operacao == "+":
             print(f'O resultado de {numero1} + {numero2} é:  {adicao}')
             break
@@ -40,11 +39,12 @@ while True:
         sair = input("Você deseja sair da calculadora? [s]im ou [n]ão: ")
 
         # Condição para sair ou continuar no projeto
-
         if sair == "s":
-            break
+            print("Obrigado por utilizar a calculadora. Volte sempre!")
+            exit()
         elif sair == "n":
-            continue
+            print("Vamos começar uma nova conta!")
+            break
         else:
             print("Digite apenas 's' para sim ou 'n' para não: ")
             continue
