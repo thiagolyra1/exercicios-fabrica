@@ -1,3 +1,4 @@
+# Loop geral
 while True:
     # Validando os números do usuário
     try:
@@ -6,7 +7,8 @@ while True:
     except ValueError:
         print("Você não digitou um número. Digite novamente do primeiro número")
         continue
-    
+
+    # Loop para escolher operação com validação
     while True:
         # Operação a ser utilizada na calculadora
         operacao = input("Qual operação você gostaria de realizar? \
@@ -34,7 +36,8 @@ while True:
         else:
             print("Não é uma operação válida, escolha novamente.")
             continue
-    
+
+    # Loop para sair ou cotinuar no programa, com validação
     while True:
         # Pergunta para continuar ou sair do projeto
         sair = input("Você deseja sair da calculadora? [s]im ou [n]ão: ")
