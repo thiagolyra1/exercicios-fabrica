@@ -6,27 +6,35 @@ while True:
     except ValueError:
         print("Você não digitou um número.")
         continue
-    # Operação a ser utilizada na calculadora
-    operacao = input("Qual operação você gostaria de realizar? Escolha algum desses: 'adicao', 'subtracao', 'multiplicacao' ou 'divisao': ")
+    
+    retornar_operacao = True
+    while retornar_operacao:
+        # Operação a ser utilizada na calculadora
+        operacao = input("Qual operação você gostaria de realizar? Escolha algum desses: '+', '-', 'x' ou '/': ")
 
-    # Lógica das operações
-    adicao = numero1 +numero2
-    subtracao = numero1 - numero2
-    multiplicacao = numero1 * numero2
-    divisao = numero1 / numero2
+        # Lógica das operações
+        adicao = numero1 +numero2
+        subtracao = numero1 - numero2
+        multiplicacao = numero1 * numero2
+        divisao = numero1 / numero2
 
-    # Condição para escolher a operação
-    if operacao == "adicao":
-        print(f'O resultado de {numero1} + {numero2} é:  {adicao}')
-    elif operacao == "subtracao":
-        print(f'O resultado de {numero1} - {numero2} é:  {subtracao}')
-    elif operacao == "multiplicacao":
-        print(f'O resultado de {numero1} x {numero2} é: {multiplicacao}')
-    elif operacao =="divisao":
-        print(f'O resultado de {numero1} / {numero2} é: {divisao}')
-    else:
-        print("Digite as opções corretas, são essas: 'adicao', 'subtracao', \
-                    'multiplicacao' ou 'divisao'")
+        # Condição para escolher a operação
+        
+        if operacao == "+":
+            print(f'O resultado de {numero1} + {numero2} é:  {adicao}')
+            retornar_operacao = False
+        elif operacao == "-":
+            print(f'O resultado de {numero1} - {numero2} é:  {subtracao}')
+            retornar_operacao = False
+        elif operacao == "x":
+            print(f'O resultado de {numero1} x {numero2} é: {multiplicacao}')
+            retornar_operacao = False
+        elif operacao =="/":
+            print(f'O resultado de {numero1} / {numero2} é: {divisao}')
+            retornar_operacao = False
+        else:
+            print("Não é uma operação válida, escolha novamente.")
+            retornar_operacao = True
     
     # Pergunta para continuar ou sair do projeto
     sair = input("Você deseja sair da calculadora? [s]im ou [n]ão: ")
