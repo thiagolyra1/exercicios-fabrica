@@ -9,7 +9,7 @@ while True:
     
     while True:
         # Operação a ser utilizada na calculadora
-        operacao = input("Qual operação você gostaria de realizar? Escolha algum desses: '+', '-', 'x' ou '/': ")
+        operacao = input("Qual operação você gostaria de realizar? Para somar digite: +, subtrair: -, multiplicar: x ou dividir: /: ")
 
         # Lógica das operações
         adicao = numero1 +numero2
