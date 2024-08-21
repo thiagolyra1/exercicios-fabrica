@@ -4,16 +4,19 @@ while True:
     # Funções
     def nao_digitou_numero():
         return print("Você não digitou um número. Digite novamente do primeiro número")
-    
+        
     def soma(primeiro,segundo):
         resultado = print(f'O resultado de {primeiro} + {segundo} é:  {primeiro+segundo}')
         return resultado
+    
     def subtracao(primeiro,segundo):
         resultado = print(f'O resultado de {primeiro} - {segundo} é:  {primeiro-segundo}')
         return resultado
+    
     def multiplicacao(primeiro,segundo):
         resultado = print(f'O resultado de {primeiro} + {segundo} é:  {primeiro*segundo}')
         return resultado
+    
     # def divisao(primeiro,segundo):
     #     resultado = print(f'O resultado de {primeiro} + {segundo} é:  {primeiro/segundo}')
     #     return resultado
