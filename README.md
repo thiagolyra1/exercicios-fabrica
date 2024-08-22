@@ -4,3 +4,4 @@ https://github.com/patyfil/tutorial-django
 
 https://github.com/iuricode/padroes-de-commits
 
+workshop-fabrica-2024.2-ThiagoLyra
