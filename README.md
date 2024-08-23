@@ -4,6 +4,8 @@ https://github.com/patyfil/tutorial-django
 
 https://github.com/iuricode/padroes-de-commits
 
+instrutuor: joaopprimo10@gmail.com
+
 workshop-fabrica-2024.2-ThiagoLyra
 
 settings.py -> installed_apps -> adicionarapp
