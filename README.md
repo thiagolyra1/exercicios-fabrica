@@ -5,3 +5,22 @@ https://github.com/patyfil/tutorial-django
 https://github.com/iuricode/padroes-de-commits
 
 workshop-fabrica-2024.2-ThiagoLyra
+
+LANGUAGE_CODE = 'pt-BR'
+TIME_ZONE = 'America/Sao_Paulo'
+
+clonar o git: -> https://github.com/thiagolyra1/exercicios-fabrica.git
+
+Criar o ambiente virtual: -> python -m venv venv
+
+Ativar/Carregar o ambiente virtual: -> venv\Scripts\activate
+
+Instalar o Django (com a venv ativada): -> pip install django
+
+Instalar o requests: -> pip install requests
+
+Criar novas migrações com base nas alterações feitas nos modelos: -> python manage.py makemigrations
+
+Aplicar e cancelar a aplicação de migrações: -> python manage.py migrate
+
+Rodar o servidor: python manage.py runserver
