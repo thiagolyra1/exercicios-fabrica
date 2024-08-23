@@ -18,6 +18,8 @@ Criar o ambiente virtual: -> python -m venv venv
 
 Ativar/Carregar o ambiente virtual: -> venv\Scripts\activate
 
+Instalar o Django, DjangoRest Framakework e requests: -> pip install django djangorestframework requests
+
 Instalar o Django (com a venv ativada): -> pip install django
 
 Instalar o requests: -> pip install requests
