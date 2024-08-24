@@ -15,6 +15,7 @@ TIME_ZONE = 'America/Sao_Paulo'
 -->> pip freeze > requirements.txt
 
 Python 3.11.2 - Django 5.1
+Os templates vão ser Django HTML. (utilizei a extensão Django no Visual Studio Code)
 
 clonar o git: -> https://github.com/thiagolyra1/exercicios-fabrica.git
 
